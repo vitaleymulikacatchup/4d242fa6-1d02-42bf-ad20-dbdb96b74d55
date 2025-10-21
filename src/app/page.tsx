@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
@@ -12,7 +12,7 @@ import SocialProofTwo from '@/components/sections/socialProof/SocialProofTwo';
 import FaqSplitText from '@/components/sections/faq/FaqSplitText';
 import ContactCenterForm from '@/components/sections/contact/ContactCenterForm';
 import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis';
-import { Award, Linkedin, Mail, MessageCircle, Settings, TrendingUp, Twitter, Users, Zap } from "lucide-react";
+import { Award, Github, Linkedin, Mail, MessageCircle, Settings, Shield, TrendingUp, Twitter, Users, Zap } from "lucide-react";
 
 const assetMap: { id: string; url: string; alt?: string }[] = [
   {"id":"hero-tech","url":"https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","alt":"A close-up shot of a person coding on a laptop, focusing on the hands and screen."},
@@ -246,6 +246,7 @@ export default function Home() {
               imageSrc: teamMember2Url,
               imageAlt: teamMember2Alt,
               socialLinks: [
+                { icon: Github, url: "https://github.com/srodriguez" },
                 { icon: Linkedin, url: "https://linkedin.com/in/sarah-rodriguez" }
               ]
             },
@@ -257,6 +258,7 @@ export default function Home() {
               imageSrc: teamMember3Url,
               imageAlt: teamMember3Alt,
               socialLinks: [
+                { icon: Shield, url: "https://example.com/david-certifications" },
                 { icon: Linkedin, url: "https://linkedin.com/in/david-park" }
               ]
             },
@@ -388,6 +390,4 @@ export default function Home() {
           description="Get in touch with our IT experts to discuss your technology needs and discover how we can help accelerate your digital transformation."
           inputs={[
             { name: "name", type: "text", placeholder: "Full Name", required: true },
-            { name: "email", type: "email", placeholder: "Email Address", required: true },
-            { name: "company", type: "text", placeholder: "Company Name", required: true },
-            { name: "phone", type: "tel
+            { name: "email", type: "email", placeholder: "
